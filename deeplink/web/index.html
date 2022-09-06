@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deeplink demo</title>
+    <link href="./normalize.min.css" rel="stylesheet" />
+    <link href="./style.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container text-center">
+        <img src="./assets/logo.svg" alt="Tranzzo" width="176" height="24">
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <h1>Deeplink</h1>
+        <div class="card">
+          <img src="./assets/ahref.svg" alt="ahref" width="72" height="72">
+          <div class="card_cap">AHREF</div>
+          <p>HTML links are hyperlinks. You can click on a link and jump to another document.</p>
+          <div class="hr"></div>
+          <a href="https://demo.tranzzo.com/deeplink?order_id=1111&status=success" class="link">
+            <span>Click me now!</span>
+          </a>
+        </div>
+        <div class="card">
+          <img src="./assets/location.svg" alt="Location replace" width="72" height="72">
+          <div class="card_cap">Location replace</div>
+          <p>The replace() method of the Location interface replaces the current resource with the one at the provided URL. The current page will not be saved in session History, meaning the user won't be able to use the back button to navigate to it.</p>
+          <div class="hr"></div>
+          <button onclick="window.location.replace('https://demo.tranzzo.com/deeplink?order_id=1111&status=success')" class="link button">
+            Click me now!
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/href.svg" alt="Location HREF" width="72" height="72">
+          <div class="card_cap">Location HREF</div>
+          <p>The href property of the Location interface is a stringifier that returns a string containing the whole URL, and allows the href to be updated.</p>
+          <div class="hr"></div>
+          <button onclick="window.location.href='https://demo.tranzzo.com/deeplink?order_id=1111&status=success'" class="link button">
+            Click me now!
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

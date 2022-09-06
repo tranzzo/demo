@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('assetsuseoSans/MuseoSansCyrl-500.eot');
+    src: local('MuseoSansCyrl-500'),
+    url('assetsuseoSans/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+    url('assetsuseoSans/MuseoSansCyrl-500.woff') format('woff'),
+    url('assetsuseoSans/MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('assetsuseoSans/MuseoSansCyrl-700.eot');
+    src: local('MuseoSansCyrl-700'),
+    url('assetsuseoSans/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+    url('assetsuseoSans/MuseoSansCyrl-700.woff') format('woff'),
+    url('assetsuseoSans/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body, html {
+    font-family: 'Museo Sans', sans-serif;
+    line-height: 1;
+    font-size: 16px;
+    color: #373641;
+    scroll-behavior: smooth;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    cursor: pointer;
+    color: #4C4CE6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000032
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 16px;
+    max-width: 288px;
+}
+
+header {
+    border-bottom: 3px solid #0000DC;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    margin: 40px 0 24px;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+p {
+    line-height: 1.75;
+    margin: 0 0 24px;
+}
+
+.hr {
+    background-color: #D9D9D9;
+    height: 1px;
+    width: 100%;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 16px 16px rgba(0, 0, 50, 0.2);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.card_cap {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0000DC;
+}
+
+.link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 24px;
+    display: block;
+}
+
+.link span {
+    position: relative;
+}
+
+.link span:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #4C4CE6;
+}
+
+.link.button {
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: #4C4CE6;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
